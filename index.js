@@ -1,10 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const reversedWord = reverse(word)
+  return word === reversedWord
 }
 
-/* 
-  Add your pseudocode here
-*/
+function reverse(word){
+const wordArray = word.split("")
+console.log('initial split into array:' , wordArray)
+const reversedWordArray = wordArray.reverse()
+console.log('reversing array :', reversedWordArray)
+const reversedWord = reversedWordArray.join("")
+console.log('reversed word joining:', reversedWord)
+return reversedWord
+}
+
+  // Add your pseudocode here
 
 /*
   Add written explanation of your solution here
